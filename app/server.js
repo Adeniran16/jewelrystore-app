@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect("mongodb://admin:password@localhost:27017/Users?authSource=admin", {
+mongoose.connect("mongodb://admin:password@mongo:27017/Users?authSource=admin", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
